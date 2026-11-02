@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6f3ee">
+<title>ぶいすぽっ！now</title>
+<style>
+:root{--bg:#f6f3ee;--paper:#fffdfa;--ink:#292725;--muted:#89847e;--line:#e8e2da;--accent:#c97878;--pale:#f5e7e5;--shadow:0 8px 24px rgba(65,49,42,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;padding-bottom:88px}
+header{height:58px;padding:0 22px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(255,253,250,.72);position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}
+.brand{font-size:11px;letter-spacing:.16em;font-weight:800}.brand span{color:var(--accent);margin-left:7px}.date{font-size:10px;letter-spacing:.12em;color:var(--muted)}.personal{border:1px solid var(--line);border-radius:20px;padding:5px 9px;margin-left:8px;font-size:9px;letter-spacing:.1em;color:var(--muted)}
+main{max-width:920px;margin:auto;padding:28px 20px 30px}.eyebrow{font-size:10px;letter-spacing:.2em;color:var(--accent);font-weight:800;margin-bottom:12px}.page-title{font-size:clamp(27px,6vw,39px);letter-spacing:.04em;line-height:1.35;margin:0 0 9px;font-weight:800}
+#home .page-title{white-space:nowrap;font-size:clamp(18px,5.7vw,39px);letter-spacing:0}.lead{font-size:12px;color:var(--muted);line-height:1.8;margin:0 0 27px}
+.section-head{display:flex;align-items:end;justify-content:space-between;margin:28px 0 14px}.section-head h2{font-size:16px;letter-spacing:.05em;margin:0}.section-head small{font-size:10px;color:var(--muted);letter-spacing:.1em}
+.feature{height:220px;border-radius:17px;overflow:hidden;position:relative;background:linear-gradient(125deg,#d9b7b1,#8c7778 60%,#51494a);box-shadow:var(--shadow);display:flex;align-items:end;padding:22px;color:white}
+.feature:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 20%,rgba(255,255,255,.38),transparent 27%),linear-gradient(0deg,rgba(25,20,20,.65),transparent 72%)}
+.feature-content{position:relative}.feature-tag{font-size:9px;letter-spacing:.18em;opacity:.85}.feature h2{font-size:21px;margin:8px 0 5px}.feature p{font-size:11px;margin:0;opacity:.85}
+.filters{display:flex;gap:8px;overflow:auto;padding-bottom:5px;margin:16px 0 13px}.filter{border:1px solid var(--line);background:var(--paper);border-radius:22px;padding:8px 14px;font-size:11px;white-space:nowrap;color:var(--muted)}.filter.active{background:var(--pale);border-color:#efd5d2;color:#9d5d5d}
+.search{width:100%;border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:12px 14px;font-size:12px;outline:none;color:var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.video-card{background:var(--paper);border:1px solid var(--line);border-radius:13px;overflow:hidden;box-shadow:0 3px 12px rgba(65,49,42,.035)}
+.thumb{height:112px;background:linear-gradient(135deg,#d9c4bd,#9c8d91);position:relative;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.85);font-size:25px}.thumb.alt{background:linear-gradient(135deg,#c6c4d5,#8e8da8)}.thumb.alt2{background:linear-gradient(135deg,#dfc7b1,#b58d82)}.thumb.alt3{background:linear-gradient(135deg,#b8cbc3,#788e86)}
+.status{position:absolute;top:9px;left:9px;background:rgba(42,37,37,.75);color:white;border-radius:4px;padding:4px 7px;font-size:9px;letter-spacing:.08em}.card-body{padding:11px}.member{font-size:10px;color:var(--accent);font-weight:700;margin-bottom:5px}.video-title{font-size:12px;font-weight:700;line-height:1.55;min-height:37px}.meta{font-size:10px;color:var(--muted);margin-top:7px}
+.actions{display:flex;gap:7px;margin-top:10px}.mini-btn{flex:1;border:1px solid var(--line);background:transparent;border-radius:7px;padding:7px 4px;font-size:10px;color:#625c57}
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;background:rgba(255,253,250,.96);border-top:1px solid var(--line);padding:8px 5px calc(8px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(5,1fr);z-index:8;backdrop-filter:blur(14px)}
+.nav-item{border:0;background:transparent;color:#918b85;font-size:9px;padding:7px 1px;border-radius:10px;display:flex;flex-direction:column;align-items:center;gap:4px}.nav-item .ico{font-size:24px;line-height:23px;height:23px;display:flex;align-items:center;justify-content:center}.nav-logo{width:23px;height:23px;display:block}.x-logo{font-family:Arial,sans-serif;font-size:25px;line-height:23px;height:23px;display:flex;align-items:center;justify-content:center;font-weight:400}.nav-item.active{background:var(--pale);color:#a45f5f;font-weight:700}
+.hidden{display:none}.playlist-hero{padding:20px;background:var(--paper);border:1px solid var(--line);border-radius:15px;margin-top:18px}.playlist-cover{height:150px;border-radius:10px;background:linear-gradient(130deg,#c6b5c5,#9e8b9c 55%,#d6b5ad);display:flex;align-items:center;justify-content:center;color:white;font-size:30px}.playlist-hero h3{font-size:15px;margin:13px 0 5px}.playlist-hero p{font-size:11px;color:var(--muted);margin:0}
+.post{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:15px;margin-bottom:11px}.post-top{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}.post strong{display:block;font-size:13px;margin:9px 0}.post p{font-size:12px;line-height:1.7;margin:0}
+.empty{padding:35px 15px;text-align:center;color:var(--muted);font-size:12px;background:var(--paper);border:1px dashed var(--line);border-radius:12px}
+@media(min-width:700px){main{padding-top:40px}.feature{height:270px}.thumb{height:145px}.cards{gap:18px}}
+@media(max-width:370px){main{padding-left:15px;padding-right:15px}.nav-item{font-size:8px}.thumb{height:92px}}
+</style>
+</head>
+<body>
+<header><div class="brand">MY SPACE <span>／ ぶいすぽっ！now</span></div><div><span class="date" id="today"></span><span class="personal">PERSONAL</span></div></header>
+<main>
+<section id="home" class="page">
+<div class="eyebrow">WELCOME TO MY SPACE</div><h1 class="page-title" id="homeTitle">今日も、ぶいすぽといっしょ。</h1><p class="lead">好きなメンバーの配信も、気になるアーカイブも。<br>今日の「見たい」をここから。</p>
+<div class="feature"><div class="feature-content"><div class="feature-tag">PICK UP ／ TODAY</div><h2>今日の配信をチェック</h2><p>お気に入りの時間を、ここから見つけよう。</p></div></div>
+<div class="section-head"><h2>配信・アーカイブ</h2><small>STREAM & ARCHIVE</small></div>
+<div class="filters"><button class="filter active">すべて</button><button class="filter">配信中</button><button class="filter">配信予定</button><button class="filter">アーカイブ</button></div>
+<div class="cards">
+<article class="video-card"><div class="thumb"><span class="status">ARCHIVE</span>▶</div><div class="card-body"><div class="member">猫汰つな</div><div class="video-title">今日ものんびりゲーム配信！</div><div class="meta">YouTube ・ アーカイブ</div></div></article>
+<article class="video-card"><div class="thumb alt"><span class="status">ARCHIVE</span>▶</div><div class="card-body"><div class="member">橘ひなの</div><div class="video-title">みんなで楽しくゲーム！</div><div class="meta">YouTube ・ アーカイブ</div></div></article>
+</div>
+</section>
+<section id="streams" class="page hidden"><div class="eyebrow">WATCH SOMETHING</div><h1 class="page-title">次は、何を見よう。</h1><p class="lead">配信もアーカイブも、ここから探そう。</p><div class="filters"><button class="filter active">すべて</button><button class="filter">配信中</button><button class="filter">配信予定</button><button class="filter">アーカイブ</button></div><input class="search" placeholder="配信タイトル・メンバーを検索"><div class="section-head"><h2>配信・アーカイブ</h2><small>VIDEOS</small></div><div class="cards">
+<article class="video-card"><div class="thumb"><span class="status">ARCHIVE</span>▶</div><div class="card-body"><div class="member">猫汰つな</div><div class="video-title">今日ものんびりゲーム配信！</div><div class="meta">YouTube ・ アーカイブ</div><div class="actions"><button class="mini-btn">ここで再生</button><button class="mini-btn">YouTubeで開く</button></div></div></article>
+<article class="video-card"><div class="thumb alt"><span class="status">ARCHIVE</span>▶</div><div class="card-body"><div class="member">橘ひなの</div><div class="video-title">みんなで楽しくゲーム！</div><div class="meta">YouTube ・ アーカイブ</div><div class="actions"><button class="mini-btn">ここで再生</button><button class="mini-btn">YouTubeで開く</button></div></div></article>
+<article class="video-card"><div class="thumb alt2"><span class="status">ARCHIVE</span>▶</div><div class="card-body"><div class="member">花芽すみれ</div><div class="video-title">今日のゲーム記録</div><div class="meta">YouTube ・ アーカイブ</div></div></article>
+<article class="video-card"><div class="thumb alt3"><span class="status">ARCHIVE</span>▶</div><div class="card-body"><div class="member">一ノ瀬うるは</div><div class="video-title">ゆったり配信アーカイブ</div><div class="meta">YouTube ・ アーカイブ</div></div></article></div></section>
+<section id="posts" class="page hidden"><div class="eyebrow">LATEST POSTS</div><h1 class="page-title">今は、なにをしよう。</h1><p class="lead">お気に入りメンバーの投稿をチェック。</p><input class="search" placeholder="メンバー名・投稿を検索"><div class="section-head"><h2>Xの投稿</h2><small>FAVORITES</small></div><article class="post"><div class="post-top"><b>猫汰つな</b><span>サンプル表示</span></div><strong>最新の投稿がここに表示されます</strong><p>Xとの連携後、お気に入りメンバーの投稿を表示する予定です。</p></article><article class="post"><div class="post-top"><b>橘ひなの</b><span>サンプル表示</span></div><strong>メンバーの投稿を見逃さない</strong><p>実際の投稿データは、今後Xとの連携が必要です。</p></article></section>
+<section id="later" class="page hidden"><div class="eyebrow">SAVE FOR LATER</div><h1 class="page-title">楽しみにしておこう。</h1><p class="lead">あとで見たい配信を、ここにまとめて。</p><div class="empty">まだ登録した動画はありません。<br>気になる配信を見つけたら、あとで見るに追加しよう。</div></section>
+<section id="lists" class="page hidden"><div class="eyebrow">YOUR PLAYLISTS</div><h1 class="page-title">お気に入りを、リストで。</h1><p class="lead">好きな動画を、自分だけのリストに。</p><div class="section-head"><h2>マイ再生リスト</h2><small>0 PLAYLISTS</small></div><div class="playlist-hero"><div class="playlist-cover">♫</div><h3>メンバー公式プレイリスト</h3><p>お気に入りのメンバーの動画をまとめて楽しもう。</p></div></section>
+</main>
+<nav class="bottom-nav">
+<button class="nav-item active" data-page="home"><span class="ico">⌂</span>ホーム</button>
+<button class="nav-item" data-page="streams"><svg class="nav-logo" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 8.2 16 12l-6 3.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>配信・アーカイブ</button>
+<button class="nav-item" data-page="posts"><span class="x-logo">𝕏</span>Xの投稿</button>
+<button class="nav-item" data-page="later"><span class="ico">♡</span>あとで見る</button>
+<button class="nav-item" data-page="lists"><span class="ico">☷</span>再生リスト</button>
+</nav>
+<script>
+const members=['つな','ひなの','すみれ','なずな','うるは','とと','れん','エマ','めと','のせ','べに','らむね','あかり','ひかり','あしゅみ','くろむ','みみ','せな','りさ','みあ','すず','のあ'];
+const last=sessionStorage.getItem('shownMember');
+let choices=members.filter(x=>x!==last);
+const picked=choices[Math.floor(Math.random()*choices.length)];
+document.getElementById('homeTitle').textContent=`今日も、${picked}といっしょ。`;
+sessionStorage.setItem('shownMember',picked);
+const d=new Date();document.getElementById('today').textContent=`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
+document.querySelectorAll('.nav-item').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.page').forEach(p=>p.classList.add('hidden'));document.getElementById(btn.dataset.page).classList.remove('hidden');document.querySelectorAll('.nav-item').forEach(b=>b.classList.remove('active'));btn.classList.add('active');window.scrollTo(0,0)}));
+document.querySelectorAll('.filters').forEach(group=>group.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{group.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active')})));
+</script>
+</body>
+</html>
