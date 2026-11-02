@@ -7,296 +7,109 @@
 <title>ぶいすぽっ！now</title>
 <style>
 :root{--bg:#f6f3ee;--paper:#fffdfa;--ink:#292725;--muted:#89847e;--line:#e8e2da;--accent:#c97878;--pale:#f5e7e5;--shadow:0 8px 24px rgba(65,49,42,.07)}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;padding-bottom:88px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;padding-bottom:88px}
 header{height:58px;padding:0 22px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(255,253,250,.72);position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}
-.brand{font-size:11px;letter-spacing:.16em;font-weight:800}.brand span{color:var(--accent);margin-left:7px}
-.date{font-size:10px;letter-spacing:.12em;color:var(--muted)}
-.personal{border:1px solid var(--line);border-radius:20px;padding:5px 9px;margin-left:8px;font-size:9px;letter-spacing:.1em;color:var(--muted)}
-main{max-width:920px;margin:auto;padding:28px 20px 30px}
-.eyebrow{font-size:10px;letter-spacing:.2em;color:var(--accent);font-weight:800;margin-bottom:12px}
-.page-title{font-size:clamp(27px,6vw,39px);letter-spacing:.04em;line-height:1.35;margin:0 0 9px;font-weight:800}
-#home .page-title{white-space:nowrap;font-size:clamp(18px,5.7vw,39px);letter-spacing:0}
-.lead{font-size:12px;color:var(--muted);line-height:1.8;margin:0 0 27px}
-.section-head{display:flex;align-items:end;justify-content:space-between;margin:28px 0 14px}
-.section-head h2{font-size:16px;letter-spacing:.05em;margin:0}
-.section-head small{font-size:10px;color:var(--muted);letter-spacing:.1em}
+.brand{font-size:11px;letter-spacing:.16em;font-weight:800}.brand span{color:var(--accent);margin-left:7px}.date{font-size:10px;letter-spacing:.12em;color:var(--muted)}.personal{border:1px solid var(--line);border-radius:20px;padding:5px 9px;margin-left:8px;font-size:9px;letter-spacing:.1em;color:var(--muted)}
+main{max-width:920px;margin:auto;padding:28px 20px 30px}.eyebrow{font-size:10px;letter-spacing:.2em;color:var(--accent);font-weight:800;margin-bottom:12px}.page-title{font-size:clamp(27px,6vw,39px);letter-spacing:.04em;line-height:1.35;margin:0 0 9px;font-weight:800}
+#home .page-title{white-space:nowrap;font-size:clamp(18px,5.7vw,39px);letter-spacing:0}.lead{font-size:12px;color:var(--muted);line-height:1.8;margin:0 0 27px}
+.section-head{display:flex;align-items:end;justify-content:space-between;margin:28px 0 14px}.section-head h2{font-size:16px;letter-spacing:.05em;margin:0}.section-head small{font-size:10px;color:var(--muted);letter-spacing:.1em}
 .feature{height:220px;border-radius:17px;overflow:hidden;position:relative;background:linear-gradient(125deg,#d9b7b1,#8c7778 60%,#51494a);box-shadow:var(--shadow);display:flex;align-items:end;padding:22px;color:white}
 .feature:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 20%,rgba(255,255,255,.38),transparent 27%),linear-gradient(0deg,rgba(25,20,20,.65),transparent 72%)}
-.feature-content{position:relative}
-.feature-tag{font-size:9px;letter-spacing:.18em;opacity:.85}
-.feature h2{font-size:21px;margin:8px 0 5px}
-.feature p{font-size:11px;margin:0;opacity:.85}
-.filters{display:flex;gap:8px;overflow:auto;padding-bottom:5px;margin:16px 0 13px}
-.filter{border:1px solid var(--line);background:var(--paper);border-radius:22px;padding:8px 14px;font-size:11px;white-space:nowrap;color:var(--muted)}
-.filter.active{background:var(--pale);border-color:#efd5d2;color:#9d5d5d}
+.feature-content{position:relative}.feature-tag{font-size:9px;letter-spacing:.18em;opacity:.85}.feature h2{font-size:21px;margin:8px 0 5px}.feature p{font-size:11px;margin:0;opacity:.85}
+.filters{display:flex;gap:8px;overflow:auto;padding-bottom:5px;margin:16px 0 13px}.filter{border:1px solid var(--line);background:var(--paper);border-radius:22px;padding:8px 14px;font-size:11px;white-space:nowrap;color:var(--muted)}.filter.active{background:var(--pale);border-color:#efd5d2;color:#9d5d5d}
 .search{width:100%;border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:12px 14px;font-size:12px;outline:none;color:var(--ink)}
-.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
-.video-card{background:var(--paper);border:1px solid var(--line);border-radius:13px;overflow:hidden;box-shadow:0 3px 12px rgba(65,49,42,.035)}
-.thumb{height:112px;background:linear-gradient(135deg,#d9c4bd,#9c8d91);position:relative;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.85);font-size:25px}
-.thumb.alt{background:linear-gradient(135deg,#c6c4d5,#8e8da8)}
-.thumb.alt2{background:linear-gradient(135deg,#dfc7b1,#b58d82)}
-.thumb.alt3{background:linear-gradient(135deg,#b8cbc3,#788e86)}
-.status{position:absolute;top:9px;left:9px;background:rgba(42,37,37,.75);color:white;border-radius:4px;padding:4px 7px;font-size:9px;letter-spacing:.08em}
-.card-body{padding:11px}
-.member{font-size:10px;color:var(--accent);font-weight:700;margin-bottom:5px}
-.video-title{font-size:12px;font-weight:700;line-height:1.55;min-height:37px}
-.meta{font-size:10px;color:var(--muted);margin-top:7px}
-.actions{display:flex;gap:7px;margin-top:10px}
-.mini-btn{flex:1;border:1px solid var(--line);background:transparent;border-radius:7px;padding:7px 4px;font-size:10px;color:#625c57}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.video-card{background:var(--paper);border:1px solid var(--line);border-radius:13px;overflow:hidden;box-shadow:0 3px 12px rgba(65,49,42,.035)}
+.thumb{height:112px;background:linear-gradient(135deg,#d9c4bd,#9c8d91);position:relative;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.85);font-size:25px}.thumb.alt{background:linear-gradient(135deg,#c6c4d5,#8e8da8)}.thumb.alt2{background:linear-gradient(135deg,#dfc7b1,#b58d82)}.thumb.alt3{background:linear-gradient(135deg,#b8cbc3,#788e86)}
+.status{position:absolute;top:9px;left:9px;background:rgba(42,37,37,.75);color:white;border-radius:4px;padding:4px 7px;font-size:9px;letter-spacing:.08em}.card-body{padding:11px}.member{font-size:10px;color:var(--accent);font-weight:700;margin-bottom:5px}.video-title{font-size:12px;font-weight:700;line-height:1.55;min-height:37px}.meta{font-size:10px;color:var(--muted);margin-top:7px}
+.actions{display:flex;gap:7px;margin-top:10px}.mini-btn{flex:1;border:1px solid var(--line);background:transparent;border-radius:7px;padding:7px 4px;font-size:10px;color:#625c57}
 .bottom-nav{position:fixed;bottom:0;left:0;right:0;background:rgba(255,253,250,.96);border-top:1px solid var(--line);padding:8px 5px calc(8px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(5,1fr);z-index:8;backdrop-filter:blur(14px)}
-.nav-item{border:0;background:transparent;color:#918b85;font-size:9px;padding:7px 1px;border-radius:10px;display:flex;flex-direction:column;align-items:center;gap:4px}
-.nav-item .ico{font-size:24px;line-height:23px;height:23px;display:flex;align-items:center;justify-content:center}
-.nav-logo{width:23px;height:23px;display:block}
-.x-logo{font-family:Arial,sans-serif;font-size:25px;line-height:23px;height:23px;display:flex;align-items:center;justify-content:center;font-weight:400}
-.nav-item.active{background:var(--pale);color:#a45f5f;font-weight:700}
-.hidden{display:none}
-.playlist-hero{padding:20px;background:var(--paper);border:1px solid var(--line);border-radius:15px;margin-top:18px}
-.playlist-cover{height:150px;border-radius:10px;background:linear-gradient(130deg,#c6b5c5,#9e8b9c 55%,#d6b5ad);display:flex;align-items:center;justify-content:center;color:white;font-size:30px}
-.playlist-hero h3{font-size:15px;margin:13px 0 5px}
-.playlist-hero p{font-size:11px;color:var(--muted);margin:0}
-.post{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:15px;margin-bottom:11px}
-.post-top{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
-.post strong{display:block;font-size:13px;margin:9px 0}
-.post p{font-size:12px;line-height:1.7;margin:0}
+.nav-item{border:0;background:transparent;color:#918b85;font-size:9px;padding:7px 1px;border-radius:10px;display:flex;flex-direction:column;align-items:center;gap:4px}.nav-item .ico{font-size:24px;line-height:23px;height:23px;display:flex;align-items:center;justify-content:center}.nav-logo{width:23px;height:23px;display:block}.x-logo{font-family:Arial,sans-serif;font-size:25px;line-height:23px;height:23px;display:flex;align-items:center;justify-content:center;font-weight:400}.nav-item.active{background:var(--pale);color:#a45f5f;font-weight:700}
+.hidden{display:none}.playlist-hero{padding:20px;background:var(--paper);border:1px solid var(--line);border-radius:15px;margin-top:18px}.playlist-cover{height:150px;border-radius:10px;background:linear-gradient(130deg,#c6b5c5,#9e8b9c 55%,#d6b5ad);display:flex;align-items:center;justify-content:center;color:white;font-size:30px}.playlist-hero h3{font-size:15px;margin:13px 0 5px}.playlist-hero p{font-size:11px;color:var(--muted);margin:0}
+.post{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:15px;margin-bottom:11px}.post-top{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}.post strong{display:block;font-size:13px;margin:9px 0}.post p{font-size:12px;line-height:1.7;margin:0}
 .empty{padding:35px 15px;text-align:center;color:var(--muted);font-size:12px;background:var(--paper);border:1px dashed var(--line);border-radius:12px}
-.member-entry{display:flex;align-items:center;justify-content:space-between;margin:28px 0 12px}
-.member-entry h2{font-size:16px;margin:0;letter-spacing:.05em}
-.text-link{border:0;background:transparent;color:var(--accent);font-size:11px;font-weight:700;padding:8px 0}
-.member-tools{display:flex;gap:9px;margin:16px 0}
-.member-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
-.member-card{background:var(--paper);border:1px solid var(--line);border-radius:13px;overflow:hidden;box-shadow:0 3px 12px rgba(65,49,42,.035);position:relative}
-.member-art{height:132px;display:flex;align-items:center;justify-content:center;color:white;font-size:29px;font-weight:800;letter-spacing:.08em;background:linear-gradient(135deg,#d9b7b1,#9c8588)}
-.member-card:nth-child(4n+2) .member-art{background:linear-gradient(135deg,#c6c4d5,#8e8da8)}
-.member-card:nth-child(4n+3) .member-art{background:linear-gradient(135deg,#dfc7b1,#b58d82)}
-.member-card:nth-child(4n) .member-art{background:linear-gradient(135deg,#b8cbc3,#788e86)}
-.member-info{padding:11px;cursor:pointer}
-.member-name{font-size:12px;font-weight:800}
-.member-en{font-size:9px;color:var(--muted);margin-top:4px;letter-spacing:.06em}
-.member-heart{position:absolute;right:8px;top:8px;border:0;background:rgba(255,253,250,.92);color:#a45f5f;border-radius:50%;width:31px;height:31px;font-size:17px}
-.member-profile{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:18px;margin-top:16px}
-.member-profile .member-art{height:190px;border-radius:11px}
-.member-profile h2{font-size:22px;margin:15px 0 5px}
-.profile-note{font-size:12px;color:var(--muted);line-height:1.8}
-.member-count{font-size:10px;color:var(--muted)}
-@media(min-width:700px){.member-grid{gap:18px}.member-art{height:170px}main{padding-top:40px}.feature{height:270px}.thumb{height:145px}.cards{gap:18px}}
+@media(min-width:700px){main{padding-top:40px}.feature{height:270px}.thumb{height:145px}.cards{gap:18px}}
 @media(max-width:370px){main{padding-left:15px;padding-right:15px}.nav-item{font-size:8px}.thumb{height:92px}}
+
+.live-thumb{height:112px;position:relative;display:flex;align-items:center;justify-content:center;color:white;font-size:28px;font-weight:800;background:linear-gradient(135deg,#c98f91,#725f70)}
+.live-thumb.live-alt{background:linear-gradient(135deg,#9b9ab9,#565775)}
+.live-thumb:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(25,20,20,.28),transparent 65%)}
+.live-thumb .status{z-index:1;background:#cf646b}
+.live-thumb .thumb-play{z-index:1;width:42px;height:42px;border:1px solid rgba(255,255,255,.8);border-radius:50%;display:flex;align-items:center;justify-content:center;padding-left:3px;background:rgba(30,25,30,.2)}
+.stream-label{display:inline-flex;align-items:center;gap:5px;color:#c45f68;font-size:9px;font-weight:800;letter-spacing:.08em;margin-bottom:5px}
+.stream-label i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#d85f68}
+@media(min-width:700px){.live-thumb{height:145px}}
+
 </style>
 </head>
 <body>
-<header>
-<div class="brand">MY SPACE <span>／ ぶいすぽっ！now</span></div>
-<div><span class="date" id="today"></span><span class="personal">PERSONAL</span></div>
-</header>
-
+<header><div class="brand">MY SPACE <span>／ ぶいすぽっ！now</span></div><div><span class="date" id="today"></span><span class="personal">PERSONAL</span></div></header>
 <main>
 <section id="home" class="page">
-<div class="eyebrow">WELCOME TO MY SPACE</div>
-<h1 class="page-title" id="homeTitle">今日も、ぶいすぽといっしょ。</h1>
-<p class="lead">好きなメンバーの配信も、気になるアーカイブも。<br>今日の「見たい」をここから。</p>
-
-<div class="feature">
-<div class="feature-content">
-<div class="feature-tag">PICK UP ／ TODAY</div>
-<h2>今日の配信をチェック</h2>
-<p>お気に入りの時間を、ここから見つけよう。</p>
-</div>
-</div>
-
-<div class="section-head"><h2>配信・アーカイブ</h2><small>STREAM & ARCHIVE</small></div>
-<div class="filters">
-<button class="filter active">すべて</button>
-<button class="filter">配信中</button>
-<button class="filter">配信予定</button>
-<button class="filter">アーカイブ</button>
-</div>
-
+<div class="eyebrow">WELCOME TO MY SPACE</div><h1 class="page-title" id="homeTitle">今日も、ぶいすぽといっしょ。</h1><p class="lead">好きなメンバーの配信も、気になるアーカイブも。<br>今日の「見たい」をここから。</p>
+<div class="feature"><div class="feature-content"><div class="feature-tag">PICK UP ／ TODAY</div><h2>今日の配信をチェック</h2><p>お気に入りの時間を、ここから見つけよう。</p></div></div>
+<div class="section-head"><h2>配信情報</h2><small>LIVE & UPCOMING</small></div>
+<div class="filters"><button class="filter active" data-home-filter="all">すべて</button><button class="filter" data-home-filter="live">配信中</button><button class="filter" data-home-filter="upcoming">配信予定</button></div>
 <div class="cards">
-<article class="video-card">
-<div class="thumb"><span class="status">ARCHIVE</span>▶</div>
-<div class="card-body"><div class="member">猫汰つな</div><div class="video-title">今日ものんびりゲーム配信！</div><div class="meta">YouTube ・ アーカイブ</div></div>
+<article class="video-card home-stream-card" data-home-status="live"><div class="live-thumb"><span class="status">LIVE</span><span class="thumb-play">▶</span></div><div class="card-body"><div class="stream-label"><i></i>配信中</div><div class="member">橘ひなの</div><div class="video-title">【VALORANT】ランクいくぞ～～！今日も勝つ！</div><div class="meta">YouTube ・ ライブ配信</div></div></article>
+<article class="video-card home-stream-card" data-home-status="live"><div class="live-thumb live-alt"><span class="status">LIVE</span><span class="thumb-play">▶</span></div><div class="card-body"><div class="stream-label"><i></i>配信中</div><div class="member">猫汰つな</div><div class="video-title">【雑談】まったりお話ししよ～！</div><div class="meta">Twitch ・ ライブ配信</div></div></article>
+<article class="video-card home-stream-card" data-home-status="upcoming"><div class="live-thumb" style="background:linear-gradient(135deg,#d8bfa9,#a98a78)"><span class="status">UPCOMING</span><span class="thumb-play">◷</span></div><div class="card-body"><div class="stream-label">配信予定</div><div class="member">花芽すみれ</div><div class="video-title">【ゲーム】今夜の配信をお楽しみに！</div><div class="meta">YouTube ・ 配信予定</div></div></article>
+<article class="video-card home-stream-card" data-home-status="upcoming"><div class="live-thumb live-alt"><span class="status">UPCOMING</span><span class="thumb-play">◷</span></div><div class="card-body"><div class="stream-label">配信予定</div><div class="member">一ノ瀬うるは</div><div class="video-title">【雑談】あとで配信するよ～</div><div class="meta">YouTube ・ 配信予定</div></div></article>
+</div>
+</section>
+<section id="streams" class="page hidden"><div class="eyebrow">WATCH SOMETHING</div><h1 class="page-title">次は、何を見よう。</h1><p class="lead">今配信中のメンバーと、これからの配信予定をチェック。</p><div class="filters"><button class="filter active" data-filter="all">すべて</button><button class="filter" data-filter="live">配信中</button><button class="filter" data-filter="upcoming">配信予定</button></div><input class="search" id="streamSearch" placeholder="配信タイトル・メンバーを検索"><div class="section-head"><h2>配信情報</h2><small>LIVE & UPCOMING</small></div><div class="cards">
+<article class="video-card stream-card" data-status="live">
+<div class="live-thumb"><span class="status">LIVE</span><span class="thumb-play">▶</span></div>
+<div class="card-body"><div class="stream-label"><i></i>配信中</div><div class="member">橘ひなの</div><div class="video-title">【VALORANT】ランクいくぞ～～！今日も勝つ！</div><div class="meta">YouTube ・ ライブ配信</div><div class="actions"><button class="mini-btn">配信を見る</button><button class="mini-btn">あとで見る</button></div></div>
 </article>
-<article class="video-card">
-<div class="thumb alt"><span class="status">ARCHIVE</span>▶</div>
-<div class="card-body"><div class="member">橘ひなの</div><div class="video-title">みんなで楽しくゲーム！</div><div class="meta">YouTube ・ アーカイブ</div></div>
+<article class="video-card stream-card" data-status="live">
+<div class="live-thumb live-alt"><span class="status">LIVE</span><span class="thumb-play">▶</span></div>
+<div class="card-body"><div class="stream-label"><i></i>配信中</div><div class="member">猫汰つな</div><div class="video-title">【雑談】まったりお話ししよ～！</div><div class="meta">Twitch ・ ライブ配信</div><div class="actions"><button class="mini-btn">配信を見る</button><button class="mini-btn">あとで見る</button></div></div>
 </article>
-</div>
 
-<div class="member-entry">
-<h2>メンバー</h2>
-<button class="text-link" onclick="showPage('members')">メンバー一覧を見る　›</button>
-</div>
-<p class="lead">ぶいすぽっ！のメンバーを探してみよう。</p>
-</section>
 
-<section id="members" class="page hidden">
-<div class="eyebrow">MEET THE MEMBERS</div>
-<h1 class="page-title">メンバー一覧</h1>
-<p class="lead">気になるメンバーを選んで、プロフィールをチェック。</p>
-<div class="member-tools"><input id="memberSearch" class="search" placeholder="メンバー名で検索" oninput="renderMembers()"></div>
-<div class="member-count" id="memberCount"></div>
-<div class="member-grid" id="memberGrid"></div>
-<div id="memberProfile"></div>
-</section>
 
-<section id="streams" class="page hidden">
-<div class="eyebrow">WATCH SOMETHING</div>
-<h1 class="page-title">次は、何を見よう。</h1>
-<p class="lead">配信もアーカイブも、ここから探そう。</p>
-<div class="filters">
-<button class="filter active">すべて</button><button class="filter">配信中</button><button class="filter">配信予定</button><button class="filter">アーカイブ</button>
-</div>
-<input class="search" placeholder="配信タイトル・メンバーを検索">
-<div class="section-head"><h2>配信・アーカイブ</h2><small>VIDEOS</small></div>
-<div class="cards">
-<article class="video-card"><div class="thumb"><span class="status">ARCHIVE</span>▶</div><div class="card-body"><div class="member">猫汰つな</div><div class="video-title">今日ものんびりゲーム配信！</div><div class="meta">YouTube ・ アーカイブ</div><div class="actions"><button class="mini-btn">ここで再生</button><button class="mini-btn">YouTubeで開く</button></div></div></article>
-<article class="video-card"><div class="thumb alt"><span class="status">ARCHIVE</span>▶</div><div class="card-body"><div class="member">橘ひなの</div><div class="video-title">みんなで楽しくゲーム！</div><div class="meta">YouTube ・ アーカイブ</div><div class="actions"><button class="mini-btn">ここで再生</button><button class="mini-btn">YouTubeで開く</button></div></div></article>
-<article class="video-card"><div class="thumb alt2"><span class="status">ARCHIVE</span>▶</div><div class="card-body"><div class="member">花芽すみれ</div><div class="video-title">今日のゲーム記録</div><div class="meta">YouTube ・ アーカイブ</div></div></article>
-<article class="video-card"><div class="thumb alt3"><span class="status">ARCHIVE</span>▶</div><div class="card-body"><div class="member">一ノ瀬うるは</div><div class="video-title">ゆったり配信アーカイブ</div><div class="meta">YouTube ・ アーカイブ</div></div></article>
-</div>
-</section>
 
-<section id="posts" class="page hidden">
-<div class="eyebrow">LATEST POSTS</div>
-<h1 class="page-title">今は、なにをしよう。</h1>
-<p class="lead">お気に入りメンバーの投稿をチェック。</p>
-<input class="search" placeholder="メンバー名・投稿を検索">
-<div class="section-head"><h2>Xの投稿</h2><small>FAVORITES</small></div>
-<article class="post"><div class="post-top"><b>猫汰つな</b><span>サンプル表示</span></div><strong>最新の投稿がここに表示されます</strong><p>Xとの連携後、お気に入りメンバーの投稿を表示する予定です。</p></article>
-<article class="post"><div class="post-top"><b>橘ひなの</b><span>サンプル表示</span></div><strong>メンバーの投稿を見逃さない</strong><p>実際の投稿データは、今後Xとの連携が必要です。</p></article>
-</section>
-
-<section id="later" class="page hidden">
-<div class="eyebrow">SAVE FOR LATER</div>
-<h1 class="page-title">楽しみにしておこう。</h1>
-<p class="lead">あとで見たい配信を、ここにまとめて。</p>
-<div class="empty">まだ登録した動画はありません。<br>気になる配信を見つけたら、あとで見るに追加しよう。</div>
-</section>
-
-<section id="lists" class="page hidden">
-<div class="eyebrow">YOUR PLAYLISTS</div>
-<h1 class="page-title">お気に入りを、リストで。</h1>
-<p class="lead">好きな動画を、自分だけのリストに。</p>
-<div class="section-head"><h2>マイ再生リスト</h2><small>0 PLAYLISTS</small></div>
-<div class="playlist-hero"><div class="playlist-cover">♫</div><h3>メンバー公式プレイリスト</h3><p>お気に入りのメンバーの動画をまとめて楽しもう。</p></div>
-</section>
+<article class="video-card stream-card" data-status="upcoming"><div class="live-thumb" style="background:linear-gradient(135deg,#d8bfa9,#a98a78)"><span class="status">UPCOMING</span><span class="thumb-play">◷</span></div><div class="card-body"><div class="stream-label">配信予定</div><div class="member">花芽すみれ</div><div class="video-title">【ゲーム】今夜の配信をお楽しみに！</div><div class="meta">YouTube ・ 配信予定</div></div></article><article class="video-card stream-card" data-status="upcoming"><div class="live-thumb live-alt"><span class="status">UPCOMING</span><span class="thumb-play">◷</span></div><div class="card-body"><div class="stream-label">配信予定</div><div class="member">一ノ瀬うるは</div><div class="video-title">【雑談】あとで配信するよ～</div><div class="meta">YouTube ・ 配信予定</div></div></article></div></section>
+<section id="posts" class="page hidden"><div class="eyebrow">LATEST POSTS</div><h1 class="page-title">今は、なにをしよう。</h1><p class="lead">お気に入りメンバーの投稿をチェック。</p><input class="search" placeholder="メンバー名・投稿を検索"><div class="section-head"><h2>Xの投稿</h2><small>FAVORITES</small></div><article class="post"><div class="post-top"><b>猫汰つな</b><span>サンプル表示</span></div><strong>最新の投稿がここに表示されます</strong><p>Xとの連携後、お気に入りメンバーの投稿を表示する予定です。</p></article><article class="post"><div class="post-top"><b>橘ひなの</b><span>サンプル表示</span></div><strong>メンバーの投稿を見逃さない</strong><p>実際の投稿データは、今後Xとの連携が必要です。</p></article></section>
+<section id="later" class="page hidden"><div class="eyebrow">SAVE FOR LATER</div><h1 class="page-title">楽しみにしておこう。</h1><p class="lead">あとで見たい配信を、ここにまとめて。</p><div class="empty">まだ登録した動画はありません。<br>気になる配信を見つけたら、あとで見るに追加しよう。</div></section>
+<section id="lists" class="page hidden"><div class="eyebrow">YOUR PLAYLISTS</div><h1 class="page-title">お気に入りを、リストで。</h1><p class="lead">好きな動画を、自分だけのリストに。</p><div class="section-head"><h2>マイ再生リスト</h2><small>0 PLAYLISTS</small></div><div class="playlist-hero"><div class="playlist-cover">♫</div><h3>メンバー公式プレイリスト</h3><p>お気に入りのメンバーの動画をまとめて楽しもう。</p></div></section>
 </main>
-
 <nav class="bottom-nav">
 <button class="nav-item active" data-page="home"><span class="ico">⌂</span>ホーム</button>
-<button class="nav-item" data-page="streams">
-<svg class="nav-logo" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 8.2 16 12l-6 3.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-配信・アーカイブ</button>
+<button class="nav-item" data-page="streams"><svg class="nav-logo" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 8.2 16 12l-6 3.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>配信・アーカイブ</button>
 <button class="nav-item" data-page="posts"><span class="x-logo">𝕏</span>Xの投稿</button>
 <button class="nav-item" data-page="later"><span class="ico">♡</span>あとで見る</button>
 <button class="nav-item" data-page="lists"><span class="ico">☷</span>再生リスト</button>
 </nav>
-
 <script>
-const members=['つな','ひなの','すみれ','なずな','うるは','とと','れん','エマ','めと','のせ','べに','らむね','あかり','ひかり','あしゅみ','くろむ','みみ','せな','りさ','みあ','すず','のあ'];
-
-const memberData=[
-['花芽すみれ','KAGA SUMIRE','JP'],
-['花芽なずな','KAGA NAZUNA','JP'],
-['小雀とと','KOGARA TOTO','JP'],
-['一ノ瀬うるは','ICHINOSE URUHA','JP'],
-['胡桃のあ','KURUMI NOAH','JP'],
-['兎咲ミミ','TOSAKI MIMI','JP'],
-['空澄セナ','ASUMI SENA','JP'],
-['橘ひなの','TACHIBANA HINANO','JP'],
-['英リサ','HANABUSA LISA','JP'],
-['如月れん','KISARAGI REN','JP'],
-['神成きゅぴ','KAMINARI QPI','JP'],
-['八雲べに','YAKUMO BENI','JP'],
-['藍沢エマ','AIZAWA EMA','JP'],
-['紫宮るな','SHINOMIYA RUNA','JP'],
-['猫汰つな','NEKOTA TSUNA','JP'],
-['白波らむね','SHIRANAMI RAMUNE','JP'],
-['小森めと','KOMORI MET','JP'],
-['夢野あかり','YUMENO AKARI','JP'],
-['夜乃くろむ','YANO KUROMU','JP'],
-['紡木こかげ','TSUMUGI KOKAGE','JP'],
-['千燈ゆうひ','SENDO YUUHI','JP'],
-['蝶屋はなび','CHOYA HANABI','JP'],
-['甘結もか','AMAYUI MOKA','JP'],
-['銀城サイネ','GINJO SAINE','JP'],
-['龍巻ちせ','TATSUMAKI CHISE','JP'],
-['青月レミア','REMIA AOTSUKI','EN'],
-['黒刃アリヤ','ARYA KUROHA','EN'],
-['地崎ジラ','JIRA JISAKI','EN'],
-['美暮ナリン','NARIN MIKURE','EN'],
-['ソラリリコ','RIKO SOLARI','EN'],
-['涼上エリス','ERIS SUZUKAMI','EN'],
-['梅園ジュノ','JUNO UMEZONO','EN']
-];
-
-function showPage(id){
- document.querySelectorAll('.page').forEach(p=>p.classList.add('hidden'));
- document.getElementById(id).classList.remove('hidden');
- document.querySelectorAll('.nav-item').forEach(b=>b.classList.toggle('active',b.dataset.page===id));
- window.scrollTo(0,0);
-}
-
-function getFavorites(){
- try{return JSON.parse(localStorage.getItem('vspoFavorites')||'[]')}
- catch(e){return []}
-}
-
-function toggleFavorite(name){
- const fav=getFavorites();
- const next=fav.includes(name)?fav.filter(x=>x!==name):[...fav,name];
- localStorage.setItem('vspoFavorites',JSON.stringify(next));
- renderMembers();
-}
-
-function renderMembers(){
- const q=(document.getElementById('memberSearch')?.value||'').trim().toLowerCase();
- const filtered=memberData.filter(m=>(m[0]+m[1]+m[2]).toLowerCase().includes(q));
- document.getElementById('memberCount').textContent=`${filtered.length} MEMBERS`;
- const fav=getFavorites();
-
- document.getElementById('memberGrid').innerHTML=filtered.map(m=>`
- <article class="member-card">
-  <button class="member-heart" aria-label="お気に入り" onclick="toggleFavorite('${m[0]}')">${fav.includes(m[0])?'♥':'♡'}</button>
-  <div class="member-art">${m[0].replace(/[ぁ-んァ-ン一-龯]/g,'').slice(0,3)||'✦'}</div>
-  <div class="member-info" onclick="openMember('${m[0]}')">
-   <div class="member-name">${m[0]}</div>
-   <div class="member-en">${m[1]} · ${m[2]}</div>
-  </div>
- </article>`).join('')||'<div class="empty">メンバーが見つかりませんでした。</div>';
-}
-
-function openMember(name){
- const m=memberData.find(x=>x[0]===name);
- if(!m)return;
- document.getElementById('memberProfile').innerHTML=`
- <div class="member-profile">
- <button class="text-link" onclick="document.getElementById('memberProfile').innerHTML=''">← 一覧に戻る</button>
- <div class="member-art">${m[0]}</div>
- <h2>${m[0]}</h2>
- <div class="member-en">${m[1]} · ${m[2]}</div>
- <p class="profile-note">プロフィール情報を確認できるページです。配信やSNSとの連携は今後追加予定です。</p>
- <button class="mini-btn" onclick="toggleFavorite('${m[0]}')">${getFavorites().includes(m[0])?'♥ お気に入り解除':'♡ お気に入りに追加'}</button>
- </div>`;
- document.getElementById('memberProfile').scrollIntoView({behavior:'smooth'});
-}
-
+const members=['すみれ','なずな','とと','うるは','のあ','ミミ','セナ','ひなの','リサ','れん','きゅぴ','べに','エマ','るな','つな','らむね','めと','あかり','くろむ','こかげ','ゆうひ','はなび','もか','サイネ','ちせ'];
 const last=sessionStorage.getItem('shownMember');
 let choices=members.filter(x=>x!==last);
 const picked=choices[Math.floor(Math.random()*choices.length)];
 document.getElementById('homeTitle').textContent=`今日も、${picked}といっしょ。`;
 sessionStorage.setItem('shownMember',picked);
+const d=new Date();document.getElementById('today').textContent=`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
+document.querySelectorAll('.nav-item').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.page').forEach(p=>p.classList.add('hidden'));document.getElementById(btn.dataset.page).classList.remove('hidden');document.querySelectorAll('.nav-item').forEach(b=>b.classList.remove('active'));btn.classList.add('active');window.scrollTo(0,0)}));
 
-const d=new Date();
-document.getElementById('today').textContent=`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
+document.querySelectorAll('#streams .filters .filter').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('#streams .filters .filter').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const filter=btn.dataset.filter;
+  document.querySelectorAll('#streams .stream-card').forEach(card=>{
+    card.style.display=(filter==='all'||card.dataset.status===filter)?'':'none';
+  });
+}));
+document.querySelectorAll('[data-home-filter]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-home-filter]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const filter=btn.dataset.homeFilter;document.querySelectorAll('.home-stream-card').forEach(card=>{card.style.display=(filter==='all'||card.dataset.homeStatus===filter)?'':'none';});}));
+const streamSearch=document.getElementById('streamSearch');
+if(streamSearch) streamSearch.addEventListener('input',()=>{
+  const q=streamSearch.value.trim().toLowerCase();
+  const active=document.querySelector('#streams .filters .filter.active')?.dataset.filter||'live';
+  document.querySelectorAll('#streams .stream-card').forEach(card=>{
+    const matches=card.innerText.toLowerCase().includes(q);
+    const category=active==='all'||card.dataset.status===active;
+    card.style.display=(matches&&category)?'':'none';
+  });
+});
 
-document.querySelectorAll('.nav-item').forEach(btn=>btn.addEventListener('click',()=>showPage(btn.dataset.page)));
-renderMembers();
-
-document.querySelectorAll('.filters').forEach(group=>group.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{
- group.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));
- btn.classList.add('active');
-})));
 </script>
-</body>
-</html>
+</body></html>
