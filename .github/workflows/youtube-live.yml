@@ -1,0 +1,136 @@
+name: Update VSPO live streams
+
+on:
+  schedule:
+    - cron: "0 0,8,16 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Fetch live streams
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.parse
+          import urllib.request
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          MEMBERS = [
+              {"name": "花芽すみれ", "id": "UCyLGcqYs7RsBb3L0SJfzGYA"},
+              {"name": "花芽なずな", "id": "UCiMG6VdScBabPhJ1ZtaVmbw"},
+              {"name": "小雀とと", "id": "UCgTzsBI0DIRopMylJEDqnog"},
+              {"name": "一ノ瀬うるは", "id": "UC5LyYg6cCA4yHEYvtUsir3g"},
+              {"name": "胡桃のあ", "id": "UCIcAj6WkJ8vZ7DeJVgmeqKw"},
+              {"name": "兎咲ミミ", "id": "UCnvVG9RbOW3J6Ifqo-zKLiw"},
+              {"name": "空澄セナ", "id": "UCF_U2GCKHvDz52jWdizppIA"},
+              {"name": "橘ひなの", "id": "UCvUc0m317LWTTPZoBQV479A"},
+              {"name": "英リサ", "id": "UCurEA8YoqFwimJcAuSHU0MQ"},
+              {"name": "如月れん", "id": "UCGWa1dMU_sDCaRQjdabsVgg"},
+              {"name": "神成きゅぴ", "id": "UCMp55EbT_ZlqiMS3lCj01BQ"},
+              {"name": "八雲べに", "id": "UCjXBuHmWkieBApgBhDuJMMQ"},
+              {"name": "藍沢エマ", "id": "UCPkKpOHxEDcwmUAnRpIu-Ng"},
+              {"name": "紫宮るな", "id": "UCD5W21JqNMv_tV9nfjvF9sw"},
+              {"name": "猫汰つな", "id": "UCIjdfjcSaEgdjwbgjxC3ZWg"},
+              {"name": "白波らむね", "id": "UC61OwuYOVuKkpKnid-43Twg"},
+              {"name": "小森めと", "id": "UCzUNASdzI4PV5SlqtYwAkKQ"},
+              {"name": "夢野あかり", "id": "UCS5l_Y0oMVTjEos2LuyeSZQ"},
+              {"name": "夜乃くろむ", "id": "UCX4WL24YEOUYd7qDsFSLDOw"},
+              {"name": "紡木こかげ", "id": "UC-WX1CXssCtCtc2TNIRnJzg"},
+              {"name": "千燈ゆうひ", "id": "UCuDY3ibSP2MFRgf7eo3cojg"},
+              {"name": "蝶屋はなび", "id": "UCL9hJsdk9eQa0IlWbFB2oRg"},
+              {"name": "甘結もか", "id": "UC8vKBjGY2HVfbW9GAmgikWw"},
+              {"name": "銀城サイネ", "id": "UC2xXx1m1jeL0W84_0jTg-Yw"},
+              {"name": "龍巻ちせ", "id": "UCoW8qQy80mKH0RJTKAK-nNA"},
+          ]
+
+          api_key = os.environ["YOUTUBE_API_KEY"]
+          live_streams = []
+
+          for member in MEMBERS:
+              params = {
+                  "part": "snippet",
+                  "channelId": member["id"],
+                  "eventType": "live",
+                  "type": "video",
+                  "maxResults": 5,
+                  "key": api_key,
+              }
+
+              url = (
+                  "https://www.googleapis.com/youtube/v3/search?"
+                  + urllib.parse.urlencode(params)
+              )
+
+              request = urllib.request.Request(url)
+
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  data = json.loads(response.read().decode("utf-8"))
+
+              for item in data.get("items", []):
+                  snippet = item["snippet"]
+                  video_id = item["id"]["videoId"]
+                  thumbnails = snippet.get("thumbnails", {})
+
+                  thumbnail = (
+                      thumbnails.get("high", {}).get("url")
+                      or thumbnails.get("medium", {}).get("url")
+                      or thumbnails.get("default", {}).get("url")
+                  )
+
+                  live_streams.append({
+                      "memberName": member["name"],
+                      "channelId": member["id"],
+                      "channelTitle": snippet.get("channelTitle", ""),
+                      "videoId": video_id,
+                      "title": snippet.get("title", ""),
+                      "thumbnail": thumbnail,
+                      "publishedAt": snippet.get("publishedAt", ""),
+                      "url": f"https://www.youtube.com/watch?v={video_id}"
+                  })
+
+          live_streams.sort(
+              key=lambda stream: stream["publishedAt"],
+              reverse=True
+          )
+
+          output = {
+              "updatedAt": datetime.now(timezone.utc).isoformat(),
+              "streams": live_streams
+          }
+
+          Path("data").mkdir(exist_ok=True)
+          Path("data/live.json").write_text(
+              json.dumps(output, ensure_ascii=False, indent=2),
+              encoding="utf-8"
+          )
+
+          print(f"Found {len(live_streams)} live streams.")
+          PY
+
+            - name: Save live stream data
+              run: |
+                git config user.name "github-actions[bot]"
+                git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                git add data/live.json
+                if ! git diff --cached --quiet; then
+                  git commit -m "Update live stream data"
+                  git push
+                fi 
