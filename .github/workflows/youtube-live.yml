@@ -2,7 +2,7 @@ name: Update VSPO live streams
 
 on:
   schedule:
-    - cron: "0 3,8,11 * * *"
+    - cron: "0 23,3,8,11 * * *"
   workflow_dispatch:
 
 permissions:
@@ -43,14 +43,10 @@ jobs:
               {"name": "橘ひなの", "id": "UCvUc0m317LWTTPZoBQV479A"},
               {"name": "英リサ", "id": "UCurEA8YoqFwimJcAuSHU0MQ"},
               {"name": "藍沢エマ", "id": "UCPkKpOHxEDcwmUAnRpIu-Ng"},
-              {"name": "紫宮るな", "id": "UCD5W21JqNMv_tV9nfjvF9sw"},
               {"name": "猫汰つな", "id": "UCIjdfjcSaEgdjwbgjxC3ZWg"},
-              {"name": "白波らむね", "id": "UC61OwuYOVuKkpKnid-43Twg"},
               {"name": "小森めと", "id": "UCzUNASdzI4PV5SlqtYwAkKQ"},
-              {"name": "夜乃くろむ", "id": "UCX4WL24YEOUYd7qDsFSLDOw"},
               {"name": "紡木こかげ", "id": "UC-WX1CXssCtCtc2TNIRnJzg"},
               {"name": "千燈ゆうひ", "id": "UCuDY3ibSP2MFRgf7eo3cojg"},
-              {"name": "蝶屋はなび", "id": "UCL9hJsdk9eQa0IlWbFB2oRg"},
               {"name": "甘結もか", "id": "UC8vKBjGY2HVfbW9GAmgikWw"},
               {"name": "銀城サイネ", "id": "UC2xXx1m1jeL0W84_0jTg-Yw"},
               {"name": "龍巻ちせ", "id": "UCoW8qQy80mKH0RJTKAK-nNA"},
