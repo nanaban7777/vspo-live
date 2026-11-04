@@ -110,6 +110,73 @@ if(streamSearch) streamSearch.addEventListener('input',()=>{
     card.style.display=(matches&&category)?'':'none';
   });
 });
+async function loadLiveStreams() {
+  const container = document.querySelector('#home .cards');
+  if (!container) return;
 
+  try {
+    const response = await fetch('./data/live.json?t=' + Date.now());
+    if (!response.ok) throw new Error('Failed to load live.json');
+
+    const data = await response.json();
+    const streams = Array.isArray(data.streams) ? data.streams : [];
+
+    container.replaceChildren();
+
+    if (streams.length === 0) {
+      const empty = document.createElement('p');
+      empty.className = 'empty';
+      empty.textContent = '現在配信中のメンバーはいません';
+      container.append(empty);
+      return;
+    }
+
+    streams.forEach(stream => {
+      const card = document.createElement('article');
+      card.className = 'video-card home-stream-card';
+
+      const link = document.createElement('a');
+      link.href = stream.url || 'https://www.youtube.com/watch?v=' + stream.videoId;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.style.display = 'block';
+      link.style.color = 'inherit';
+      link.style.textDecoration = 'none';
+
+      const thumb = document.createElement('div');
+      thumb.className = 'thumb';
+
+      if (stream.thumbnail) {
+        thumb.style.backgroundImage = `url("${stream.thumbnail}")`;
+        thumb.style.backgroundSize = 'cover';
+        thumb.style.backgroundPosition = 'center';
+      }
+
+      const status = document.createElement('span');
+      status.className = 'status';
+      status.textContent = 'LIVE';
+      thumb.append(status);
+
+      const body = document.createElement('div');
+      body.className = 'card-body';
+
+      const name = document.createElement('div');
+      name.textContent = stream.memberName || stream.channelTitle;
+
+      const title = document.createElement('div');
+      title.textContent = stream.title || '';
+
+      body.append(name, title);
+      link.append(thumb, body);
+      card.append(link);
+      container.append(card);
+    });
+
+  } catch (error) {
+    console.error('配信情報の取得に失敗:', error);
+  }
+}
+
+loadLiveStreams();
 </script>
 </body></html>
