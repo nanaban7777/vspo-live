@@ -61,7 +61,7 @@ jobs:
                   "channelId": member["id"],
                   "eventType": "live",
                   "type": "video",
-                  "maxResults": 5,
+                  "maxResults": 1,
                   "key": api_key,
               }
 
