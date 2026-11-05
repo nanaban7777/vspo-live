@@ -1,6 +1,36 @@
 {
-  "updatedAt": "2026-11-05T08:45:13.423650+00:00",
+  "updatedAt": "2026-11-05T11:42:41.772384+00:00",
   "streams": [
+    {
+      "memberName": "胡桃のあ",
+      "channelId": "UCIcAj6WkJ8vZ7DeJVgmeqKw",
+      "channelTitle": "胡桃のあ",
+      "videoId": "bD8M7mRsu7k",
+      "title": "【 APEX 】リサ、ハセシンとフルパやります【 ぶいすぽっ！胡桃のあ 】",
+      "thumbnail": "https://i.ytimg.com/vi/bD8M7mRsu7k/hqdefault.jpg",
+      "publishedAt": "2026-11-05T09:58:00Z",
+      "url": "https://www.youtube.com/watch?v=bD8M7mRsu7k"
+    },
+    {
+      "memberName": "英リサ",
+      "channelId": "UCurEA8YoqFwimJcAuSHU0MQ",
+      "channelTitle": "英リサ.Hanabusa Lisa",
+      "videoId": "lUb7PInrO30",
+      "title": "【APEX】今日も元気に✊/のあちゃん、ハセっち【ぶいすぽっ！/英リサ】",
+      "thumbnail": "https://i.ytimg.com/vi/lUb7PInrO30/hqdefault.jpg",
+      "publishedAt": "2026-11-05T09:52:48Z",
+      "url": "https://www.youtube.com/watch?v=lUb7PInrO30"
+    },
+    {
+      "memberName": "空澄セナ",
+      "channelId": "UCF_U2GCKHvDz52jWdizppIA",
+      "channelTitle": "空澄セナ -Asumi Sena-",
+      "videoId": "aN9YZMtxkKM",
+      "title": "【LoL】心に皇帝を宿す #LTK 【空澄セナ/ぶいすぽっ！】",
+      "thumbnail": "https://i.ytimg.com/vi/aN9YZMtxkKM/hqdefault.jpg",
+      "publishedAt": "2026-11-05T09:37:55Z",
+      "url": "https://www.youtube.com/watch?v=aN9YZMtxkKM"
+    },
     {
       "memberName": "橘ひなの",
       "channelId": "UCvUc0m317LWTTPZoBQV479A",
@@ -10,6 +40,16 @@
       "thumbnail": "https://i.ytimg.com/vi/3igGxylE2oA/hqdefault.jpg",
       "publishedAt": "2026-11-05T07:33:12Z",
       "url": "https://www.youtube.com/watch?v=3igGxylE2oA"
+    },
+    {
+      "memberName": "小森めと",
+      "channelId": "UCzUNASdzI4PV5SlqtYwAkKQ",
+      "channelTitle": "Met Channel / 小森めと ",
+      "videoId": "kvRYJCMoL08",
+      "title": "【 APEX 】さくちゃんえにちゃんとapex【 ぶいすぽっ！ / 小森めと 】",
+      "thumbnail": "https://i.ytimg.com/vi/kvRYJCMoL08/hqdefault.jpg",
+      "publishedAt": "2026-11-05T05:29:19Z",
+      "url": "https://www.youtube.com/watch?v=kvRYJCMoL08"
     }
   ]
 }
