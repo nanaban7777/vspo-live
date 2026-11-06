@@ -1,4 +1,55 @@
 {
-  "updatedAt": "2026-11-06T03:39:06.713673+00:00",
-  "streams": []
+  "updatedAt": "2026-11-06T08:42:14.706545+00:00",
+  "streams": [
+    {
+      "memberName": "胡桃のあ",
+      "channelId": "UCIcAj6WkJ8vZ7DeJVgmeqKw",
+      "channelTitle": "胡桃のあ",
+      "videoId": "Asq3AEjQ-_c",
+      "title": "【 APEX 】ハルくんとシノさん！【 ぶいすぽっ！胡桃のあ 】",
+      "thumbnail": "https://i.ytimg.com/vi/Asq3AEjQ-_c/hqdefault.jpg",
+      "publishedAt": "2026-11-06T07:07:34Z",
+      "url": "https://www.youtube.com/watch?v=Asq3AEjQ-_c"
+    },
+    {
+      "memberName": "空澄セナ",
+      "channelId": "UCF_U2GCKHvDz52jWdizppIA",
+      "channelTitle": "空澄セナ -Asumi Sena-",
+      "videoId": "2d3Noe-2rg8",
+      "title": "【LoL】Season: Finale CC NEXT DAY6 16:30~スクリム 18:00～本番vsIT #LTK 【空澄セナ/叶3/獅子堂あかり/鷹宮リオン3/Yufuna/ぶいすぽっ！】",
+      "thumbnail": "https://i.ytimg.com/vi/2d3Noe-2rg8/hqdefault.jpg",
+      "publishedAt": "2026-11-06T06:52:52Z",
+      "url": "https://www.youtube.com/watch?v=2d3Noe-2rg8"
+    },
+    {
+      "memberName": "龍巻ちせ",
+      "channelId": "UCoW8qQy80mKH0RJTKAK-nNA",
+      "channelTitle": "龍巻ちせ / Tatsumaki Chise",
+      "videoId": "QQkkTyAq9UA",
+      "title": "◤ League of Legends ◢ #LTK Season: Finale CC CORE DAY6！16:00~2v2 17:00~練習 18:00～本番 ◤ぶいすぽっ！ #龍巻ちせ ⁠◢",
+      "thumbnail": "https://i.ytimg.com/vi/QQkkTyAq9UA/hqdefault.jpg",
+      "publishedAt": "2026-11-06T06:48:51Z",
+      "url": "https://www.youtube.com/watch?v=QQkkTyAq9UA"
+    },
+    {
+      "memberName": "橘ひなの",
+      "channelId": "UCvUc0m317LWTTPZoBQV479A",
+      "channelTitle": "橘ひなの / Hinano Tachibana",
+      "videoId": "xAfmTRxitm0",
+      "title": "【 League of Legends 】LTK Season: Finale | Regular Stage Day 6　スクリムから #LTK  【 ぶいすぽっ！/橘ひなの 】",
+      "thumbnail": "https://i.ytimg.com/vi/xAfmTRxitm0/hqdefault.jpg",
+      "publishedAt": "2026-11-06T06:15:45Z",
+      "url": "https://www.youtube.com/watch?v=xAfmTRxitm0"
+    },
+    {
+      "memberName": "千燈ゆうひ",
+      "channelId": "UCuDY3ibSP2MFRgf7eo3cojg",
+      "channelTitle": "千燈ゆうひ",
+      "videoId": "gZje81tIjng",
+      "title": "【#LTK】最後の本番！！！！！成れ　成るんだ【 ぶいすぽっ！ / 千燈ゆうひ 】",
+      "thumbnail": "https://i.ytimg.com/vi/gZje81tIjng/hqdefault.jpg",
+      "publishedAt": "2026-11-05T19:56:51Z",
+      "url": "https://www.youtube.com/watch?v=gZje81tIjng"
+    }
+  ]
 }
