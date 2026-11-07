@@ -1,15 +1,25 @@
 {
-  "updatedAt": "2026-11-07T03:34:29.988654+00:00",
+  "updatedAt": "2026-11-07T08:36:38.663916+00:00",
   "streams": [
     {
-      "memberName": "花芽すみれ",
-      "channelId": "UCyLGcqYs7RsBb3L0SJfzGYA",
-      "channelTitle": "花芽すみれ / Kaga Sumire",
-      "videoId": "HmY9TtHnG4Y",
-      "title": "あーさあさ【ぶいすぽっ！/花芽すみれ】",
-      "thumbnail": "https://i.ytimg.com/vi/HmY9TtHnG4Y/hqdefault.jpg",
-      "publishedAt": "2026-11-07T00:09:31Z",
-      "url": "https://www.youtube.com/watch?v=HmY9TtHnG4Y"
+      "memberName": "紡木こかげ",
+      "channelId": "UC-WX1CXssCtCtc2TNIRnJzg",
+      "channelTitle": "紡木こかげ",
+      "videoId": "Cm67hL41yYc",
+      "title": "【VALORANT】昨日は弱い日だったけど今日はどんな日になるのかな2【ぶいすぽっ！ / 紡木こかげ】",
+      "thumbnail": "https://i.ytimg.com/vi/Cm67hL41yYc/hqdefault.jpg",
+      "publishedAt": "2026-11-07T05:38:26Z",
+      "url": "https://www.youtube.com/watch?v=Cm67hL41yYc"
+    },
+    {
+      "memberName": "猫汰つな",
+      "channelId": "UCIjdfjcSaEgdjwbgjxC3ZWg",
+      "channelTitle": "猫汰つな / Nekota Tsuna",
+      "videoId": "tQ_TxlEZDaQ",
+      "title": "【ペルソナ５ ザ・ロイヤル】#11 完全初見！モナどこ；；　※ネタバレ注意【ぶいすぽ / 猫汰つな】",
+      "thumbnail": "https://i.ytimg.com/vi/tQ_TxlEZDaQ/hqdefault.jpg",
+      "publishedAt": "2026-11-07T04:53:20Z",
+      "url": "https://www.youtube.com/watch?v=tQ_TxlEZDaQ"
     }
   ]
 }
