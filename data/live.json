@@ -1,15 +1,25 @@
 {
-  "updatedAt": "2026-11-07T11:23:20.555937+00:00",
+  "updatedAt": "2026-11-07T23:22:07.627758+00:00",
   "streams": [
+    {
+      "memberName": "千燈ゆうひ",
+      "channelId": "UCuDY3ibSP2MFRgf7eo3cojg",
+      "channelTitle": "千燈ゆうひ",
+      "videoId": "Bu2k_39HGSI",
+      "title": "GEN vs IG | Worlds 2026 Semifinals Day 1 公式ウォッチパーティー！【ぶいすぽっ！/千燈ゆうひ】",
+      "thumbnail": "https://i.ytimg.com/vi/Bu2k_39HGSI/hqdefault.jpg",
+      "publishedAt": "2026-11-07T21:33:57Z",
+      "url": "https://www.youtube.com/watch?v=Bu2k_39HGSI"
+    },
     {
       "memberName": "小森めと",
       "channelId": "UCzUNASdzI4PV5SlqtYwAkKQ",
       "channelTitle": "Met Channel / 小森めと ",
-      "videoId": "G4MyFg5-Foc",
-      "title": "【 APEX 】えーぺっくすで あ　そ　ぼ　🎶【 ぶいすぽっ！ / 小森めと 】",
-      "thumbnail": "https://i.ytimg.com/vi/G4MyFg5-Foc/hqdefault.jpg",
-      "publishedAt": "2026-11-07T10:12:04Z",
-      "url": "https://www.youtube.com/watch?v=G4MyFg5-Foc"
+      "videoId": "OhrWLERUOJw",
+      "title": "【 ニチアサ 】るんるんにちようび【 ぶいすぽっ！ / 小森めと 】",
+      "thumbnail": "https://i.ytimg.com/vi/OhrWLERUOJw/hqdefault.jpg",
+      "publishedAt": "2026-11-07T15:14:25Z",
+      "url": "https://www.youtube.com/watch?v=OhrWLERUOJw"
     }
   ]
 }
