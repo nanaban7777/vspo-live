@@ -1,4 +1,25 @@
 {
-  "updatedAt": "2026-11-09T23:27:00.451685+00:00",
-  "streams": []
+  "updatedAt": "2026-11-10T03:35:28.599702+00:00",
+  "streams": [
+    {
+      "memberName": "胡桃のあ",
+      "channelId": "UCIcAj6WkJ8vZ7DeJVgmeqKw",
+      "channelTitle": "胡桃のあ",
+      "videoId": "B3ejVwmE27s",
+      "title": "【 APEX 】かためのパン食べたら口の中ボロボロになりませんか【 ぶいすぽっ！胡桃のあ 】",
+      "thumbnail": "https://i.ytimg.com/vi/B3ejVwmE27s/hqdefault.jpg",
+      "publishedAt": "2026-11-10T02:59:57Z",
+      "url": "https://www.youtube.com/watch?v=B3ejVwmE27s"
+    },
+    {
+      "memberName": "紡木こかげ",
+      "channelId": "UC-WX1CXssCtCtc2TNIRnJzg",
+      "channelTitle": "紡木こかげ",
+      "videoId": "DPr8R3000co",
+      "title": "【VALORANT】おはよ～良い朝🌱【ぶいすぽっ！ / 紡木こかげ】",
+      "thumbnail": "https://i.ytimg.com/vi/DPr8R3000co/hqdefault.jpg",
+      "publishedAt": "2026-11-10T01:32:54Z",
+      "url": "https://www.youtube.com/watch?v=DPr8R3000co"
+    }
+  ]
 }
