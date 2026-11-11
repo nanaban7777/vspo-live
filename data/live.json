@@ -1,4 +1,25 @@
 {
-  "updatedAt": "2026-11-11T03:39:32.100008+00:00",
-  "streams": []
+  "updatedAt": "2026-11-11T08:43:28.769467+00:00",
+  "streams": [
+    {
+      "memberName": "胡桃のあ",
+      "channelId": "UCIcAj6WkJ8vZ7DeJVgmeqKw",
+      "channelTitle": "胡桃のあ",
+      "videoId": "8HVxcUm4Hic",
+      "title": "【 APEX 】こつこつとプラチナ１を目指して【 ぶいすぽっ！胡桃のあ 】",
+      "thumbnail": "https://i.ytimg.com/vi/8HVxcUm4Hic/hqdefault.jpg",
+      "publishedAt": "2026-11-11T06:43:17Z",
+      "url": "https://www.youtube.com/watch?v=8HVxcUm4Hic"
+    },
+    {
+      "memberName": "銀城サイネ",
+      "channelId": "UC2xXx1m1jeL0W84_0jTg-Yw",
+      "channelTitle": "銀城サイネ / Ginjo Saine",
+      "videoId": "nR1is-oWBEU",
+      "title": "【スト6】少し時間が空いてしまった【ぶいすぽっ！ #銀城サイネ 】",
+      "thumbnail": "https://i.ytimg.com/vi/nR1is-oWBEU/hqdefault.jpg",
+      "publishedAt": "2026-11-11T04:44:27Z",
+      "url": "https://www.youtube.com/watch?v=nR1is-oWBEU"
+    }
+  ]
 }
