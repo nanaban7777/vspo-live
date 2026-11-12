@@ -88,6 +88,26 @@ let choices=members.filter(x=>x!==last);
 const picked=choices[Math.floor(Math.random()*choices.length)];
 document.getElementById('homeTitle').textContent=`今日も、${picked}といっしょ。`;
 sessionStorage.setItem('shownMember',picked);
+  
+const favoriteKey = 'vspoFavoriteMembers';
+
+let favorites = JSON.parse(
+  localStorage.getItem(favoriteKey) || '[]'
+);
+
+function toggleFavorite(name) {
+  if (favorites.includes(name)) {
+    favorites = favorites.filter(x => x !== name);
+  } else {
+    favorites.push(name);
+  }
+
+  localStorage.setItem(
+    favoriteKey,
+    JSON.stringify(favorites)
+  );
+}
+
 const d=new Date();document.getElementById('today').textContent=`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
 document.querySelectorAll('.nav-item').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.page').forEach(p=>p.classList.add('hidden'));document.getElementById(btn.dataset.page).classList.remove('hidden');document.querySelectorAll('.nav-item').forEach(b=>b.classList.remove('active'));btn.classList.add('active');window.scrollTo(0,0)}));
 
