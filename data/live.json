@@ -1,15 +1,25 @@
 {
-  "updatedAt": "2026-11-12T11:44:39.176784+00:00",
+  "updatedAt": "2026-11-12T23:28:22.920091+00:00",
   "streams": [
     {
-      "memberName": "英リサ",
-      "channelId": "UCurEA8YoqFwimJcAuSHU0MQ",
-      "channelTitle": "英リサ.Hanabusa Lisa",
-      "videoId": "hM4c7vuR4uw",
-      "title": "【Put Your Toys Away Together!】お片付けェ 2【ぶいすぽっ！/英リサ】",
-      "thumbnail": "https://i.ytimg.com/vi/hM4c7vuR4uw/hqdefault.jpg",
-      "publishedAt": "2026-11-12T07:42:34Z",
-      "url": "https://www.youtube.com/watch?v=hM4c7vuR4uw"
+      "memberName": "猫汰つな",
+      "channelId": "UCIjdfjcSaEgdjwbgjxC3ZWg",
+      "channelTitle": "猫汰つな / Nekota Tsuna",
+      "videoId": "1Ekw2eMn-2Y",
+      "title": "ねむ【ぶいすぽ / 猫汰つな】",
+      "thumbnail": "https://i.ytimg.com/vi/1Ekw2eMn-2Y/hqdefault.jpg",
+      "publishedAt": "2026-11-12T22:32:51Z",
+      "url": "https://www.youtube.com/watch?v=1Ekw2eMn-2Y"
+    },
+    {
+      "memberName": "空澄セナ",
+      "channelId": "UCF_U2GCKHvDz52jWdizppIA",
+      "channelTitle": "空澄セナ -Asumi Sena-",
+      "videoId": "RF1SQPPWBQY",
+      "title": "【LoL】健康界隈   #LTK【空澄セナ/ぶいすぽっ！】",
+      "thumbnail": "https://i.ytimg.com/vi/RF1SQPPWBQY/hqdefault.jpg",
+      "publishedAt": "2026-11-12T21:47:04Z",
+      "url": "https://www.youtube.com/watch?v=RF1SQPPWBQY"
     }
   ]
 }
