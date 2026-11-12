@@ -108,6 +108,30 @@ function toggleFavorite(name) {
   );
 }
 
+document.querySelectorAll('.stream-card').forEach(card => {
+  const member = card.querySelector('.member');
+  if (!member) return;
+
+  const name = member.textContent.trim();
+  const button = document.createElement('button');
+  button.className = 'mini-btn';
+
+  const updateButton = () => {
+    button.textContent = favorites.includes(name)
+      ? '♥ お気に入り'
+      : '♡ お気に入り';
+  };
+
+  updateButton();
+
+  button.addEventListener('click', () => {
+    toggleFavorite(name);
+    updateButton();
+  });
+
+  member.after(button);
+});
+
 const d=new Date();document.getElementById('today').textContent=`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
 document.querySelectorAll('.nav-item').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.page').forEach(p=>p.classList.add('hidden'));document.getElementById(btn.dataset.page).classList.remove('hidden');document.querySelectorAll('.nav-item').forEach(b=>b.classList.remove('active'));btn.classList.add('active');window.scrollTo(0,0)}));
 
