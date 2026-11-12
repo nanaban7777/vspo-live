@@ -1,0 +1,11 @@
+{
+  "name": "ぶいすぽっ！now",
+  "short_name": "ぶいすぽっ！now",
+  "description": "ぶいすぽっ！の配信情報まとめアプリ",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f3ee",
+  "theme_color": "#f6f3ee",
+  "lang": "ja"
+}
