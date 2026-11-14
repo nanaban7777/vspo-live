@@ -1,15 +1,35 @@
 {
-  "updatedAt": "2026-11-14T03:35:31.637418+00:00",
+  "updatedAt": "2026-11-14T08:37:11.663106+00:00",
   "streams": [
     {
-      "memberName": "紡木こかげ",
-      "channelId": "UC-WX1CXssCtCtc2TNIRnJzg",
-      "channelTitle": "紡木こかげ",
-      "videoId": "wVswSz0Nujs",
-      "title": "【VALORANT】弱かったら解散ｯ❕【ぶいすぽっ！ / 紡木こかげ】",
-      "thumbnail": "https://i.ytimg.com/vi/wVswSz0Nujs/hqdefault.jpg",
-      "publishedAt": "2026-11-14T01:53:17Z",
-      "url": "https://www.youtube.com/watch?v=wVswSz0Nujs"
+      "memberName": "一ノ瀬うるは",
+      "channelId": "UC5LyYg6cCA4yHEYvtUsir3g",
+      "channelTitle": "一ノ瀬うるは",
+      "videoId": "qcvVizbhRkE",
+      "title": "【APEX】本日も元気に弾打ち【ぶいすぽ/一ノ瀬うるは】",
+      "thumbnail": "https://i.ytimg.com/vi/qcvVizbhRkE/hqdefault.jpg",
+      "publishedAt": "2026-11-14T07:08:15Z",
+      "url": "https://www.youtube.com/watch?v=qcvVizbhRkE"
+    },
+    {
+      "memberName": "藍沢エマ",
+      "channelId": "UCPkKpOHxEDcwmUAnRpIu-Ng",
+      "channelTitle": "藍沢エマ / Aizawa Ema",
+      "videoId": "nuUbGmjuDlw",
+      "title": "【スト6】samu^【ぶいすぽっ！/ 藍沢エマ】",
+      "thumbnail": "https://i.ytimg.com/vi/nuUbGmjuDlw/hqdefault.jpg",
+      "publishedAt": "2026-11-14T06:36:18Z",
+      "url": "https://www.youtube.com/watch?v=nuUbGmjuDlw"
+    },
+    {
+      "memberName": "英リサ",
+      "channelId": "UCurEA8YoqFwimJcAuSHU0MQ",
+      "channelTitle": "英リサ.Hanabusa Lisa",
+      "videoId": "HdaZT_yJIZk",
+      "title": "【APEX】APEXハシゴデイ/かみとさん、でゅくし【ぶいすぽっ！/英リサ】",
+      "thumbnail": "https://i.ytimg.com/vi/HdaZT_yJIZk/hqdefault.jpg",
+      "publishedAt": "2026-11-14T04:59:43Z",
+      "url": "https://www.youtube.com/watch?v=HdaZT_yJIZk"
     }
   ]
 }
