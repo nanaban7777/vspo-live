@@ -1,15 +1,25 @@
 {
-  "updatedAt": "2026-11-18T08:49:13.950148+00:00",
+  "updatedAt": "2026-11-18T11:47:15.449334+00:00",
   "streams": [
     {
       "memberName": "英リサ",
       "channelId": "UCurEA8YoqFwimJcAuSHU0MQ",
       "channelTitle": "英リサ.Hanabusa Lisa",
       "videoId": "Jx6KpJwDo-w",
-      "title": "【APEX】FFLスクリムウウウウウウウう！第１【ぶいすぽっ！/英リサ】",
+      "title": "【APEX】チーム：ワン！たつB　FFLスクリム　第１【ぶいすぽっ！/英リサ】",
       "thumbnail": "https://i.ytimg.com/vi/Jx6KpJwDo-w/hqdefault.jpg",
       "publishedAt": "2026-11-18T08:37:54Z",
       "url": "https://www.youtube.com/watch?v=Jx6KpJwDo-w"
+    },
+    {
+      "memberName": "空澄セナ",
+      "channelId": "UCF_U2GCKHvDz52jWdizppIA",
+      "channelTitle": "空澄セナ -Asumi Sena-",
+      "videoId": "KzhI9yNu_iA",
+      "title": "【LoL】最後の無限 in スランプ   #LTK【空澄セナ/叶3.獅子堂あかり.鷹宮リオン.Yufuna.yuhiコーチぶいすぽっ！】",
+      "thumbnail": "https://i.ytimg.com/vi/KzhI9yNu_iA/hqdefault.jpg",
+      "publishedAt": "2026-11-18T07:46:58Z",
+      "url": "https://www.youtube.com/watch?v=KzhI9yNu_iA"
     },
     {
       "memberName": "胡桃のあ",
@@ -22,24 +32,14 @@
       "url": "https://www.youtube.com/watch?v=aVrWPyzmqPs"
     },
     {
-      "memberName": "兎咲ミミ",
-      "channelId": "UCnvVG9RbOW3J6Ifqo-zKLiw",
-      "channelTitle": "兎咲ミミ / Tosaki Mimi",
-      "videoId": "S5XFpVPLpXA",
-      "title": "【VALORANT 】そろり～【ぶいすぽ/兎咲ミミ】",
-      "thumbnail": "https://i.ytimg.com/vi/S5XFpVPLpXA/hqdefault.jpg",
-      "publishedAt": "2026-11-18T06:04:50Z",
-      "url": "https://www.youtube.com/watch?v=S5XFpVPLpXA"
-    },
-    {
-      "memberName": "龍巻ちせ",
-      "channelId": "UCoW8qQy80mKH0RJTKAK-nNA",
-      "channelTitle": "龍巻ちせ / Tatsumaki Chise",
-      "videoId": "i5EuDdc4s1c",
-      "title": "◤ League of Legends ◢ #LTK Season: Finale CC CORE 練習！ ◤ぶいすぽっ！ #龍巻ちせ ⁠◢",
-      "thumbnail": "https://i.ytimg.com/vi/i5EuDdc4s1c/hqdefault.jpg",
-      "publishedAt": "2026-11-18T00:08:46Z",
-      "url": "https://www.youtube.com/watch?v=i5EuDdc4s1c"
+      "memberName": "小森めと",
+      "channelId": "UCzUNASdzI4PV5SlqtYwAkKQ",
+      "channelTitle": "Met Channel / 小森めと ",
+      "videoId": "R1O7VnEDTmo",
+      "title": "【 APEX 】FFL APEX BLOCK PARTY スクリムいきます！【 ぶいすぽっ！ / 小森めと 】",
+      "thumbnail": "https://i.ytimg.com/vi/R1O7VnEDTmo/hqdefault.jpg",
+      "publishedAt": "2026-11-18T07:05:57Z",
+      "url": "https://www.youtube.com/watch?v=R1O7VnEDTmo"
     }
   ]
 }
