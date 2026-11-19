@@ -1,4 +1,45 @@
 {
-  "updatedAt": "2026-11-19T03:43:33.089439+00:00",
-  "streams": []
+  "updatedAt": "2026-11-19T08:49:53.957015+00:00",
+  "streams": [
+    {
+      "memberName": "胡桃のあ",
+      "channelId": "UCIcAj6WkJ8vZ7DeJVgmeqKw",
+      "channelTitle": "胡桃のあ",
+      "videoId": "2UVoYe_ushs",
+      "title": "【 APEX 】FFL APEX チーム ワン！立つB 優勝を目指して【 ぶいすぽっ！胡桃のあ 】",
+      "thumbnail": "https://i.ytimg.com/vi/2UVoYe_ushs/hqdefault.jpg",
+      "publishedAt": "2026-11-19T08:04:27Z",
+      "url": "https://www.youtube.com/watch?v=2UVoYe_ushs"
+    },
+    {
+      "memberName": "英リサ",
+      "channelId": "UCurEA8YoqFwimJcAuSHU0MQ",
+      "channelTitle": "英リサ.Hanabusa Lisa",
+      "videoId": "AqW2epWc8KY",
+      "title": "【APEX】チーム：ワン！たつB　本番！ポーランドルール！【ぶいすぽっ！/英リサ】",
+      "thumbnail": "https://i.ytimg.com/vi/AqW2epWc8KY/hqdefault.jpg",
+      "publishedAt": "2026-11-19T08:00:51Z",
+      "url": "https://www.youtube.com/watch?v=AqW2epWc8KY"
+    },
+    {
+      "memberName": "空澄セナ",
+      "channelId": "UCF_U2GCKHvDz52jWdizppIA",
+      "channelTitle": "空澄セナ -Asumi Sena-",
+      "videoId": "SuQHiI-UpIY",
+      "title": "【LoL】最後の無限 in スランプ   #LTK【空澄セナ/叶3.獅子堂あかり.鷹宮リオン.Yufuna.yuhiコーチぶいすぽっ！】",
+      "thumbnail": "https://i.ytimg.com/vi/SuQHiI-UpIY/hqdefault.jpg",
+      "publishedAt": "2026-11-19T07:54:46Z",
+      "url": "https://www.youtube.com/watch?v=SuQHiI-UpIY"
+    },
+    {
+      "memberName": "橘ひなの",
+      "channelId": "UCvUc0m317LWTTPZoBQV479A",
+      "channelTitle": "橘ひなの / Hinano Tachibana",
+      "videoId": "6sn4hS9ZsHY",
+      "title": "【 League of Legends 】昼活スクリム！  #LTK  【 ぶいすぽっ！/橘ひなの 】",
+      "thumbnail": "https://i.ytimg.com/vi/6sn4hS9ZsHY/hqdefault.jpg",
+      "publishedAt": "2026-11-19T04:07:15Z",
+      "url": "https://www.youtube.com/watch?v=6sn4hS9ZsHY"
+    }
+  ]
 }
