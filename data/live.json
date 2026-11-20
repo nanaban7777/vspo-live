@@ -1,4 +1,35 @@
 {
-  "updatedAt": "2026-11-19T23:31:47.697757+00:00",
-  "streams": []
+  "updatedAt": "2026-11-20T03:40:20.118766+00:00",
+  "streams": [
+    {
+      "memberName": "兎咲ミミ",
+      "channelId": "UCnvVG9RbOW3J6Ifqo-zKLiw",
+      "channelTitle": "兎咲ミミ / Tosaki Mimi",
+      "videoId": "e9qJIq-e52g",
+      "title": "【雑談】ごはんたべながらはなすだけ【ぶいすぽ/兎咲ミミ】",
+      "thumbnail": "https://i.ytimg.com/vi/e9qJIq-e52g/hqdefault.jpg",
+      "publishedAt": "2026-11-20T03:25:58Z",
+      "url": "https://www.youtube.com/watch?v=e9qJIq-e52g"
+    },
+    {
+      "memberName": "藍沢エマ",
+      "channelId": "UCPkKpOHxEDcwmUAnRpIu-Ng",
+      "channelTitle": "藍沢エマ / Aizawa Ema",
+      "videoId": "XwItGVPKMb4",
+      "title": "【スト6】ひる~【ぶいすぽっ！/ 藍沢エマ】",
+      "thumbnail": "https://i.ytimg.com/vi/XwItGVPKMb4/hqdefault.jpg",
+      "publishedAt": "2026-11-20T02:58:48Z",
+      "url": "https://www.youtube.com/watch?v=XwItGVPKMb4"
+    },
+    {
+      "memberName": "橘ひなの",
+      "channelId": "UCvUc0m317LWTTPZoBQV479A",
+      "channelTitle": "橘ひなの / Hinano Tachibana",
+      "videoId": "zsr6Kp_Hc2Q",
+      "title": "【 League of Legends 】最後のスクリムだ～！  #LTK  【 ぶいすぽっ！/橘ひなの 】",
+      "thumbnail": "https://i.ytimg.com/vi/zsr6Kp_Hc2Q/hqdefault.jpg",
+      "publishedAt": "2026-11-20T02:56:43Z",
+      "url": "https://www.youtube.com/watch?v=zsr6Kp_Hc2Q"
+    }
+  ]
 }
