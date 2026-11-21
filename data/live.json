@@ -1,15 +1,35 @@
 {
-  "updatedAt": "2026-11-21T08:38:28.869573+00:00",
+  "updatedAt": "2026-11-21T11:32:04.123852+00:00",
   "streams": [
     {
-      "memberName": "紡木こかげ",
-      "channelId": "UC-WX1CXssCtCtc2TNIRnJzg",
-      "channelTitle": "紡木こかげ",
-      "videoId": "Ab4B_GxDgQY",
-      "title": "【VALORANT】堅忍不抜【ぶいすぽっ！ / 紡木こかげ】",
-      "thumbnail": "https://i.ytimg.com/vi/Ab4B_GxDgQY/hqdefault.jpg",
-      "publishedAt": "2026-11-21T04:49:40Z",
-      "url": "https://www.youtube.com/watch?v=Ab4B_GxDgQY"
+      "memberName": "胡桃のあ",
+      "channelId": "UCIcAj6WkJ8vZ7DeJVgmeqKw",
+      "channelTitle": "胡桃のあ",
+      "videoId": "YV8NUEDzUaw",
+      "title": "【 魔法少女ノ魔女裁判 】#2 これからどうなるんですか【 ぶいすぽっ！胡桃のあ 】",
+      "thumbnail": "https://i.ytimg.com/vi/YV8NUEDzUaw/hqdefault.jpg",
+      "publishedAt": "2026-11-21T11:15:35Z",
+      "url": "https://www.youtube.com/watch?v=YV8NUEDzUaw"
+    },
+    {
+      "memberName": "小森めと",
+      "channelId": "UCzUNASdzI4PV5SlqtYwAkKQ",
+      "channelTitle": "Met Channel / 小森めと ",
+      "videoId": "rh1sYamtNLc",
+      "title": "【 VALORANT 】がらすにしたふるぱ【 ぶいすぽっ！ / 小森めと 】",
+      "thumbnail": "https://i.ytimg.com/vi/rh1sYamtNLc/hqdefault.jpg",
+      "publishedAt": "2026-11-21T09:45:26Z",
+      "url": "https://www.youtube.com/watch?v=rh1sYamtNLc"
+    },
+    {
+      "memberName": "兎咲ミミ",
+      "channelId": "UCnvVG9RbOW3J6Ifqo-zKLiw",
+      "channelTitle": "兎咲ミミ / Tosaki Mimi",
+      "videoId": "-Bj0sbQU--c",
+      "title": "【VALORANT 】ふるぱ【ぶいすぽ/兎咲ミミ】",
+      "thumbnail": "https://i.ytimg.com/vi/-Bj0sbQU--c/hqdefault.jpg",
+      "publishedAt": "2026-11-21T09:34:31Z",
+      "url": "https://www.youtube.com/watch?v=-Bj0sbQU--c"
     }
   ]
 }
