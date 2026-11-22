@@ -1,4 +1,65 @@
 {
-  "updatedAt": "2026-11-22T08:39:52.949808+00:00",
-  "streams": []
+  "updatedAt": "2026-11-22T11:32:35.870262+00:00",
+  "streams": [
+    {
+      "memberName": "胡桃のあ",
+      "channelId": "UCIcAj6WkJ8vZ7DeJVgmeqKw",
+      "channelTitle": "胡桃のあ",
+      "videoId": "fChQXlJgh54",
+      "title": "【 APEX 】ぶいすぽGG スクリムやります！/ベリーちゃん、エマちゃん【 ぶいすぽっ！胡桃のあ 】",
+      "thumbnail": "https://i.ytimg.com/vi/fChQXlJgh54/hqdefault.jpg",
+      "publishedAt": "2026-11-22T09:35:34Z",
+      "url": "https://www.youtube.com/watch?v=fChQXlJgh54"
+    },
+    {
+      "memberName": "英リサ",
+      "channelId": "UCurEA8YoqFwimJcAuSHU0MQ",
+      "channelTitle": "英リサ.Hanabusa Lisa",
+      "videoId": "h294J7xYRfw",
+      "title": "【#ぶいすぽGG】チーム５！スクリム！BANあり！ヨロシク！【ぶいすぽっ！/英リサ】",
+      "thumbnail": "https://i.ytimg.com/vi/h294J7xYRfw/hqdefault.jpg",
+      "publishedAt": "2026-11-22T09:09:43Z",
+      "url": "https://www.youtube.com/watch?v=h294J7xYRfw"
+    },
+    {
+      "memberName": "甘結もか",
+      "channelId": "UC8vKBjGY2HVfbW9GAmgikWw",
+      "channelTitle": "甘結もか / Amayui Moka",
+      "videoId": "Q0G3sTBVce4",
+      "title": "【APEX】ぶいすぽGGスクリム・顔合わせ/　緋八マナさん、ハセシンさん　【 ぶいすぽっ！甘結もか 】",
+      "thumbnail": "https://i.ytimg.com/vi/Q0G3sTBVce4/hqdefault.jpg",
+      "publishedAt": "2026-11-22T08:17:46Z",
+      "url": "https://www.youtube.com/watch?v=Q0G3sTBVce4"
+    },
+    {
+      "memberName": "藍沢エマ",
+      "channelId": "UCPkKpOHxEDcwmUAnRpIu-Ng",
+      "channelTitle": "藍沢エマ / Aizawa Ema",
+      "videoId": "Jg0izloSZIQ",
+      "title": "【APEX】のあエマベリーぶいすぽGG スクリム！【ぶいすぽっ！/ 藍沢エマ】",
+      "thumbnail": "https://i.ytimg.com/vi/Jg0izloSZIQ/hqdefault.jpg",
+      "publishedAt": "2026-11-22T07:59:44Z",
+      "url": "https://www.youtube.com/watch?v=Jg0izloSZIQ"
+    },
+    {
+      "memberName": "一ノ瀬うるは",
+      "channelId": "UC5LyYg6cCA4yHEYvtUsir3g",
+      "channelTitle": "一ノ瀬うるは",
+      "videoId": "LYi5Z6LMi9M",
+      "title": "【APEX】ぶいすぽGGすくりむだ！！【ぶいすぽ/一ノ瀬うるは】",
+      "thumbnail": "https://i.ytimg.com/vi/LYi5Z6LMi9M/hqdefault.jpg",
+      "publishedAt": "2026-11-22T04:45:30Z",
+      "url": "https://www.youtube.com/watch?v=LYi5Z6LMi9M"
+    },
+    {
+      "memberName": "小森めと",
+      "channelId": "UCzUNASdzI4PV5SlqtYwAkKQ",
+      "channelTitle": "Met Channel / 小森めと ",
+      "videoId": "cWgmk22JFzU",
+      "title": "【 APEX 】ぶいすぽGG！スクリムいくぞ~💥🔫【 ぶいすぽっ！ / 小森めと 】",
+      "thumbnail": "https://i.ytimg.com/vi/cWgmk22JFzU/hqdefault.jpg",
+      "publishedAt": "2026-11-22T01:37:45Z",
+      "url": "https://www.youtube.com/watch?v=cWgmk22JFzU"
+    }
+  ]
 }
