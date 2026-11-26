@@ -1,4 +1,25 @@
 {
-  "updatedAt": "2026-11-26T03:46:39.802701+00:00",
-  "streams": []
+  "updatedAt": "2026-11-26T08:51:51.378997+00:00",
+  "streams": [
+    {
+      "memberName": "紡木こかげ",
+      "channelId": "UC-WX1CXssCtCtc2TNIRnJzg",
+      "channelTitle": "紡木こかげ",
+      "videoId": "dzOmM6Z_igM",
+      "title": "【VALORANT】いいつむの日らしいのでちょいランク→21時～2cスクリム足引っ張ったら土下座【ぶいすぽっ！ / 紡木こかげ】",
+      "thumbnail": "https://i.ytimg.com/vi/dzOmM6Z_igM/hqdefault.jpg",
+      "publishedAt": "2026-11-26T08:29:26Z",
+      "url": "https://www.youtube.com/watch?v=dzOmM6Z_igM"
+    },
+    {
+      "memberName": "小森めと",
+      "channelId": "UCzUNASdzI4PV5SlqtYwAkKQ",
+      "channelTitle": "Met Channel / 小森めと ",
+      "videoId": "aIytT2kyYgA",
+      "title": "ざつ【 ぶいすぽっ！ / 小森めと 】",
+      "thumbnail": "https://i.ytimg.com/vi/aIytT2kyYgA/hqdefault.jpg",
+      "publishedAt": "2026-11-26T08:02:21Z",
+      "url": "https://www.youtube.com/watch?v=aIytT2kyYgA"
+    }
+  ]
 }
