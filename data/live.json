@@ -1,15 +1,35 @@
 {
-  "updatedAt": "2026-11-27T08:51:39.203557+00:00",
+  "updatedAt": "2026-11-27T11:43:07.537532+00:00",
   "streams": [
     {
-      "memberName": "兎咲ミミ",
-      "channelId": "UCnvVG9RbOW3J6Ifqo-zKLiw",
-      "channelTitle": "兎咲ミミ / Tosaki Mimi",
-      "videoId": "t8UUpTW5_yY",
-      "title": "【APEX】この時間からふるぱ【ぶいすぽ/兎咲ミミ】",
-      "thumbnail": "https://i.ytimg.com/vi/t8UUpTW5_yY/hqdefault.jpg",
-      "publishedAt": "2026-11-27T03:51:37Z",
-      "url": "https://www.youtube.com/watch?v=t8UUpTW5_yY"
+      "memberName": "英リサ",
+      "channelId": "UCurEA8YoqFwimJcAuSHU0MQ",
+      "channelTitle": "英リサ.Hanabusa Lisa",
+      "videoId": "EE4rugUSNuo",
+      "title": "【APEX】ぶいすぽフルパドーン/なずちゃん、ひなーの【ぶいすぽっ！/英リサ】",
+      "thumbnail": "https://i.ytimg.com/vi/EE4rugUSNuo/hqdefault.jpg",
+      "publishedAt": "2026-11-27T10:40:44Z",
+      "url": "https://www.youtube.com/watch?v=EE4rugUSNuo"
+    },
+    {
+      "memberName": "橘ひなの",
+      "channelId": "UCvUc0m317LWTTPZoBQV479A",
+      "channelTitle": "橘ひなの / Hinano Tachibana",
+      "videoId": "cpbRUaovjVY",
+      "title": "【 Apex Legends 】 今日はAPEXはしご w / なずリサ  【ぶいすぽっ！/橘ひなの】",
+      "thumbnail": "https://i.ytimg.com/vi/cpbRUaovjVY/hqdefault.jpg",
+      "publishedAt": "2026-11-27T10:35:26Z",
+      "url": "https://www.youtube.com/watch?v=cpbRUaovjVY"
+    },
+    {
+      "memberName": "猫汰つな",
+      "channelId": "UCIjdfjcSaEgdjwbgjxC3ZWg",
+      "channelTitle": "猫汰つな / Nekota Tsuna",
+      "videoId": "ldvOQGU2yzc",
+      "title": "【#猫汰つな生誕祭2026 】お披露目あり！？生まれたのでおめでとうください！！！【ぶいすぽ / 猫汰つな】",
+      "thumbnail": "https://i.ytimg.com/vi/ldvOQGU2yzc/hqdefault.jpg",
+      "publishedAt": "2026-11-26T13:57:46Z",
+      "url": "https://www.youtube.com/watch?v=ldvOQGU2yzc"
     }
   ]
 }
