@@ -1,15 +1,35 @@
 {
-  "updatedAt": "2026-11-28T08:40:06.482538+00:00",
+  "updatedAt": "2026-11-28T11:37:16.653996+00:00",
   "streams": [
+    {
+      "memberName": "橘ひなの",
+      "channelId": "UCvUc0m317LWTTPZoBQV479A",
+      "channelTitle": "橘ひなの / Hinano Tachibana",
+      "videoId": "Em5dsa2qKi8",
+      "title": "【 Apex Legends 】ブロムン・・・😭 w / うるは、りんたん 【ぶいすぽっ！/橘ひなの】",
+      "thumbnail": "https://i.ytimg.com/vi/Em5dsa2qKi8/hqdefault.jpg",
+      "publishedAt": "2026-11-28T08:35:07Z",
+      "url": "https://www.youtube.com/watch?v=Em5dsa2qKi8"
+    },
+    {
+      "memberName": "一ノ瀬うるは",
+      "channelId": "UC5LyYg6cCA4yHEYvtUsir3g",
+      "channelTitle": "一ノ瀬うるは",
+      "videoId": "MeJgzSUHsHQ",
+      "title": "【APEX】病み上がりの逞しいAIMキボンヌ(^^)/【ぶいすぽ/一ノ瀬うるは】",
+      "thumbnail": "https://i.ytimg.com/vi/MeJgzSUHsHQ/hqdefault.jpg",
+      "publishedAt": "2026-11-28T08:31:25Z",
+      "url": "https://www.youtube.com/watch?v=MeJgzSUHsHQ"
+    },
     {
       "memberName": "紡木こかげ",
       "channelId": "UC-WX1CXssCtCtc2TNIRnJzg",
       "channelTitle": "紡木こかげ",
-      "videoId": "Cm5tVoDiYgE",
-      "title": "【VALORANT】絶対に怒ったりしません。なぜならこんなに良い笑顔をしているのだから【ぶいすぽっ！ / 紡木こかげ】",
-      "thumbnail": "https://i.ytimg.com/vi/Cm5tVoDiYgE/hqdefault.jpg",
-      "publishedAt": "2026-11-28T04:52:25Z",
-      "url": "https://www.youtube.com/watch?v=Cm5tVoDiYgE"
+      "videoId": "ifAWrlzIqtk",
+      "title": "【VALORANT】2cプレミア本番参加します！少し緊張【ぶいすぽっ！ / 紡木こかげ】",
+      "thumbnail": "https://i.ytimg.com/vi/ifAWrlzIqtk/hqdefault.jpg",
+      "publishedAt": "2026-11-28T05:10:19Z",
+      "url": "https://www.youtube.com/watch?v=ifAWrlzIqtk"
     }
   ]
 }
